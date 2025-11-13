@@ -108,7 +108,7 @@ const Footer = () => {
           <div className={styles.left}>
             <img src={logo_2} alt="Arkane Logo" />
             <p>
-              Arkane Digital crafts immersive digital experiences that blend strategy, creativity, and technology to move brands forward.
+              Automyta empowers businesses with smart automation, AI-driven workflows, and digital solutions designed to optimize operations and accelerate growth.
             </p>
             <div className={styles.location}>
               <FaMapMarkerAlt className={styles.icon} />
@@ -121,12 +121,12 @@ const Footer = () => {
             <div className={styles.center}>
               <h4>Company</h4>
               <ul>
-                <li>About Us</li>
-                <li>Our Services</li>
-                <li>Work Showcase</li>
+                <li>About Automyta</li>
+                <li>Our Solutions</li>
+                <li>AI Tools</li>
+                <li>Case Studies</li>
                 <li>Careers</li>
-                <li>Articles</li>
-                <li>Contact</li>
+                <li>Contact Us</li>
               </ul>
             </div>
 
@@ -134,11 +134,11 @@ const Footer = () => {
             <div className={styles.resources}>
               <h4>Resources</h4>
               <ul>
-                <li>Case Studies</li>
-                <li>Brand Guidelines</li>
-                <li>FAQs</li>
-                <li>Community</li>
-                <li>Support</li>
+                <li>Automation Guides</li>
+                <li>API Documentation</li>
+                <li>Pricing</li>
+                <li>Support Center</li>
+                <li>Blog</li>
               </ul>
             </div>
           </div>
@@ -149,7 +149,7 @@ const Footer = () => {
           {/* Right */}
           <div className={styles.right}>
             <h4>Stay Updated</h4>
-            <p>Subscribe to our newsletter to stay inspired with the latest in design and tech.</p>
+            <p>Join our newsletter to get updates on AI automation, new tools, and workflow solutions.</p>
             <div className={`${styles.input_section}`}>
               <div className={styles.newsletter}>
                 <input type="email" placeholder="Enter your email" />
@@ -173,13 +173,13 @@ const Footer = () => {
               <FaDribbble />
               <FaBehance />
             </div>
-            <p className={styles.email}><FaEnvelope /> hello@arkanedigital.com</p>
+            <p className={styles.email}><FaEnvelope /> support@automyta.com</p>
           </div>
         </div>
 
         {/* --- Bottom Section --- */}
         <div className={styles.bottom}>
-          <p>© 2025 Arkane Digital. All Rights Reserved.</p>
+          <p>© 2025 Automyta. All Rights Reserved.</p>
           <p className={styles.policy}>Privacy Policy</p>
         </div>
       </div>
