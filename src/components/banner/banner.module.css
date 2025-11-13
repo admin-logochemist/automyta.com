@@ -82,8 +82,12 @@
 /* Tablets */
 @media (max-width: 1024px) {
   .main_Section {
-  padding: 80px 0px !important;
-}
+    padding: 80px 0px !important;
+  }
+
+  .contain_sec {
+    padding: 100px 0px ;
+  }
 
   .main_ai {
     padding: 0 40px;

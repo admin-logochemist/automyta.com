@@ -10,19 +10,21 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@talkjs/react-components": "^0.0.28",
     "aos": "^2.3.4",
     "axios": "^1.13.2",
     "bootstrap": "^5.3.8",
     "gsap": "^3.13.0",
     "lottie-web": "^5.13.0",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
     "react-fast-marquee": "^1.6.5",
     "react-icons": "^5.5.0",
     "react-router": "^7.9.4",
     "react-router-dom": "^7.9.4",
     "react-slick": "^0.31.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "talkjs": "^0.42.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
