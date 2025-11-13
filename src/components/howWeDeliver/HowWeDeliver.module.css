@@ -1,0 +1,155 @@
+.main_fluid {
+  background-color: #0F0715;
+  color: #fff;
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+/* .main_container {
+  text-align: center;
+} */
+
+.header {
+  /* margin-bottom: 50px; */
+  padding: 20px 0px;
+  color: #fff;
+}
+
+.header h2 {
+  font-size: 50px;
+  font-weight: 700;
+  padding: 20px 0px;
+}
+
+.header p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.slider {
+  position: relative;
+}
+
+.slide {
+  position: relative;
+  height: 70vh;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 12, 16, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textBox {
+  max-width: 600px;
+  background: rgba(30, 30, 30, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 40px;
+  text-align: left;
+}
+
+.textBox h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.textBox p {
+  font-size: 15px;
+  color: #e1e1e1;
+  line-height: 1.6;
+}
+
+/* 
+.slick-dots li button:before {
+  color: white;
+  opacity: 0.5;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #fff;
+  opacity: 1;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: white;
+  font-size: 28px;
+}
+
+@media (max-width: 768px) {
+  .textBox {
+    padding: 25px;
+    font-size: 14px;
+  }
+  .header h2 {
+    font-size: 32px;
+  }
+} */
+
+:global(.slick-dots li button:before) {
+  color: #ffffff !important;
+  opacity: 0.7 !important;
+  font-size: 14px !important;
+  transition: all 0.3s ease;
+}
+
+:global(.slick-dots li.slick-active button:before) {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  font-size: 18px !important;
+}
+
+:global(.slick-prev:before),
+:global(.slick-next:before) {
+  color: #ffffff !important;
+  font-size: 40px !important;
+  /* arrow size increased */
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+:global(.slick-prev:hover:before),
+:global(.slick-next:hover:before) {
+  opacity: 1;
+  color: #7F66FF !important;
+  /* hover color */
+}
+
+:global(.slick-prev) {
+  left: -70px !important;
+}
+
+:global(.slick-next) {
+  right: -45px !important;
+}
+
+@media (max-width: 768px) {
+  :global(.slick-prev) {
+    left: -25px !important;
+  }
+
+  :global(.slick-next) {
+    right: -25px !important;
+  }
+}

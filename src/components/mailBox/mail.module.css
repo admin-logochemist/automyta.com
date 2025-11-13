@@ -1,0 +1,61 @@
+.main_sec {
+    padding: 50px 0px;
+    background: linear-gradient(180deg, #1B0327 0%, #2A083C 100%);
+}
+
+.contain {
+    padding: 50px 40px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s ease;
+}
+
+.contain:hover {
+    background: linear-gradient(145deg, #a958ff1f, #ff5f9e1f);
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 40px rgba(169, 88, 255, 0.25);
+}
+
+.text_sec h1 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.mail_btn {
+    padding: 20px 0px;
+}
+
+.mail_btn button {
+    border: 1px solid #fff;
+    padding: 14px 28px;
+    color: #ffffff;
+    border-radius: 6px;
+    background-color: transparent;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.mail_btn button:hover {
+   background: #f7f7f7;
+    border-color: #B859EE;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(148, 13, 114, 0.4);
+    color: #000;
+}
+
+@media (max-width: 480px) {
+.contain{
+    flex-direction: column-reverse;
+    gap: 20px;
+}
+}

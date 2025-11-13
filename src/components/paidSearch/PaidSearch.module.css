@@ -1,0 +1,146 @@
+.paid_section {
+  background: linear-gradient(180deg, #190324 0%, #2e0941 100%);
+  color: #fff;
+  padding: 90px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.header h2 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.header h2 span {
+  background: linear-gradient(90deg, #5a65ff, #a958ff, #ff5f9e);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.header p {
+  color: #ccc0e1;
+  max-width: 780px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* Metrics Row */
+.metrics {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.metrics div {
+  text-align: center;
+}
+
+.metrics h3 {
+  font-size: 30px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #6a7bff, #a958ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 4px;
+}
+
+.metrics span {
+  font-size: 14px;
+  color: #cbb7ea;
+}
+
+/* Features Grid */
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-bottom: 60px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 14px;
+  padding: 24px;
+  text-align: left;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  min-height: 190px;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.icon {
+  font-size: 30px;
+  margin-bottom: 12px;
+  background: linear-gradient(90deg, #5a65ff, #a958ff, #ff5f9e);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.card h4 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #d5cbe9;
+  line-height: 1.6;
+}
+
+/* CTA Section */
+.cta_box {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.cta_box h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: #eae1ff;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .features {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .header h2 {
+    font-size: 28px;
+    padding: 0px 10px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .metrics {
+    gap: 30px;
+  }
+}

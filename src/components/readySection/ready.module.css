@@ -1,0 +1,76 @@
+.main_fluid {
+    overflow: hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.801)), url('../../assets//images/download7.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contain {
+    height: 50vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.ready_sec {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 25px;
+}
+
+.ready_sec h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: right;
+}
+
+/* Small screens (mobile) */
+@media (max-width: 575.98px) {
+    .contain {
+        height: auto;
+        padding: 60px 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .ready_sec {
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .ready_sec h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 991.98px) {
+    .contain {
+        justify-content: center;
+        align-items: center;
+        height: 45vh;
+    }
+
+    .ready_sec {
+        align-items: center;
+        text-align: center;
+    }
+
+    .ready_sec h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Large screens (laptops/desktops) */
+@media (min-width: 1200px) {
+    .ready_sec h1 {
+        font-size: 2.5rem;
+    }
+}

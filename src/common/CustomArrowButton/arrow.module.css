@@ -1,0 +1,201 @@
+/* .arrow_btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.line {
+  display: inline-block;
+  width: 70px;
+  height: 1px;
+  background-color: #aaa;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.line::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -3px;
+  width: 6px;
+  height: 6px;
+  border-top: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
+}
+
+.arrow_btn:hover .line {
+  width: 90px;
+  background-color: #42DDA6;
+}
+
+.arrow_btn:hover .line::after {
+  border-color: #42DDA6;
+}
+
+.arrow_btn:hover .text {
+  color: #42DDA6;
+  transform: translateX(3px);
+}
+
+.text {
+  transition: all 0.3s ease;
+} */
+
+/* .arrow_btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent !important; 
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  outline: none;
+  box-shadow: none; 
+  padding: 0; 
+  appearance: none; 
+  -webkit-tap-highlight-color: transparent; 
+}
+
+.arrow_btn:hover,
+.arrow_btn:focus,
+.arrow_btn:active {
+  background: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+.line {
+  display: inline-block;
+  width: 70px;
+  height: 1px;
+  background-color: #A689FF; 
+  position: relative;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+.line::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -3px;
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid #A689FF;
+  border-right: 2px solid #A689FF;
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
+}
+
+.arrow_btn:hover .line {
+  width: 90px;
+  background-color: none !important; 
+  box-shadow: 0 0 10px rgba(228, 214, 255, 0.7);
+}
+
+.arrow_btn:hover .line::after {
+  border-color: #E4D6FF;
+}
+
+.arrow_btn:hover .text {
+  color: #E4D6FF;
+  transform: translateX(4px);
+  text-shadow: 0 0 6px rgba(228, 214, 255, 0.6);
+}
+
+.text {
+  transition: all 0.3s ease;
+} */
+
+
+
+.arrow_btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  border: none;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  outline: none;
+  padding: 0;
+  color: var(--text-color, #ffffff);
+}
+
+.arrow_btn:hover,
+.arrow_btn:focus,
+.arrow_btn:active {
+  background: transparent !important;
+  outline: none !important;
+}
+
+/* --- Line Styles --- */
+.line {
+  display: inline-block;
+  width: 70px;
+  height: 1px;
+  background-color: var(--line-color, #a689ff);
+  position: relative;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+/* --- Arrow Tip --- */
+.line::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -3px;
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid var(--line-color, #a689ff);
+  border-right: 2px solid var(--line-color, #a689ff);
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
+}
+
+/* --- Hover Effects --- */
+.arrow_btn:hover .line {
+  width: 90px;
+  background-color: var(--hover-color, #e4d6ff);
+  box-shadow: 0 0 10px var(--hover-color, rgba(228, 214, 255, 0.7));
+}
+
+.arrow_btn:hover .line::after {
+  border-color: var(--hover-color, #e4d6ff);
+}
+
+.arrow_btn:hover .text {
+  color: var(--hover-color, #e4d6ff);
+  transform: translateX(4px);
+  text-shadow: 0 0 6px var(--hover-color, rgba(228, 214, 255, 0.6));
+}
+
+/* --- Text --- */
+.text {
+  transition: all 0.3s ease;
+  color: var(--text-color, #ffffff);
+}

@@ -1,0 +1,173 @@
+.main_Section {
+  position: relative;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.562)),
+    url('../../assets/images/paid.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+/* 🔹 Video Background */
+.video_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.08;
+  z-index: 1;
+  pointer-events: none;
+  /* filter: brightness(0.3); */
+}
+
+.contain_sec {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+
+.main_ai {
+  width: fit-content;
+  padding: 0px 80px;
+  width: 100%;
+  text-align: center;
+}
+
+.sec_content {
+  /* text-align: justify;
+  text-align-last: left; */
+  /* border: 1px solid #fff; */
+  text-align: center;
+}
+
+.sec_content::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+.motivation h1 {
+  color: #fff;
+  font-size: 100px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  line-height: 100px;
+  margin: 0;
+}
+
+.gradientText {
+  background: linear-gradient(90deg, #ff5f9e 0%, #a958ff 40%, #6a7bff 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
+.moti_para p {
+  color: #e7e7e7;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  font-size: 23px;
+  text-align: left;
+  padding: 35px 0px;
+  line-height: 35px;
+  /* max-width: 700px; */
+  /* color: #6751d6; */
+  text-align: center;
+}
+
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .main_ai {
+    padding: 0 40px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .motivation h1 {
+    font-size: 60px;
+    line-height: 80px;
+
+  }
+
+  .moti_para p {
+    font-size: 20px;
+    line-height: 30px;
+    /* max-width: 600px; */
+    padding: 0px 0px 20px;
+  }
+}
+
+/* Mobile Landscape */
+@media (max-width: 768px) {
+  .contain_sec {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0 30px;
+  }
+
+  .main_ai {
+    padding: 0 20px;
+  }
+
+  .sec_content {
+    /* text-align: center;
+  text-align-last: center; */
+    text-align: center;
+  }
+
+  .motivation h1 {
+    font-size: 46px;
+    line-height: 52px;
+  }
+
+  .moti_para p {
+    font-size: 18px;
+    line-height: 28px;
+    padding: 25px 0;
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+/* Mobile Portrait / Small Devices */
+@media (max-width: 480px) {
+  .contain_sec {
+    padding: 0px 10px;
+  }
+
+  .main_ai {
+    margin-top: 80px;
+
+  }
+
+  .motivation h1 {
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+  .moti_para p {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 20px 0;
+  }
+
+  .main_ai {
+    padding: 0 0px;
+  }
+
+  .contain_sec {
+    height: 80vh;
+
+  }
+}

@@ -1,0 +1,35 @@
+.main_fluid {
+    /* border: 1px solid #fff; */
+    /* background: linear-gradient(rgb(17, 11, 17), rgb(17, 11, 17)); */
+    padding: 100px 0px;
+    height: auto;
+    background-color: #0F0715;
+
+
+}
+
+.heading_partner {
+    /* border: 1px solid #fff; */
+    color: #fff;
+    padding: 10px 0px;
+}
+
+.heading_partner h1 {
+    padding: 10px 0px;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.heading_partner p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.img_sec {
+    padding: 20px 0px;
+    /* border: 1px solid #fff; */
+}
+
+.img_sec img {
+    width: 100%;
+}

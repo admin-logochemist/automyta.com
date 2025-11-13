@@ -1,0 +1,160 @@
+.social_section {
+  background: linear-gradient(180deg, #190324 0%, #2e0941 100%);
+  color: #fff;
+  padding: 100px 0;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.header h2 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.header span {
+  background: linear-gradient(90deg, #ff5f9e, #a958ff, #6a7bff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.header p {
+  max-width: 720px;
+  margin: 40px auto 0;
+  color: #cfc2e8;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* Platform Showcase */
+.platforms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 70px;
+}
+
+.platform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s ease;
+}
+
+.platform:hover {
+  transform: translateY(-8px);
+}
+
+.icon {
+  font-size: 38px;
+  transition: 0.3s;
+}
+
+.insta {
+  color: #ff5f9e;
+}
+
+.fb {
+  color: #6a7bff;
+}
+
+.tiktok {
+  color: #a958ff;
+}
+
+.platform span {
+  font-size: 14px;
+  color: #d9cfff;
+}
+
+/* Features Grid */
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 18px rgba(169, 88, 255, 0.2);
+}
+
+.card_icon {
+  font-size: 36px;
+  margin-bottom: 14px;
+  background: linear-gradient(90deg, #ff5f9e, #a958ff, #6a7bff);
+  background-clip: text;                
+  -webkit-background-clip: text;        
+  color: transparent;                 
+}
+
+.card h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #d9cfff;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* CTA Section */
+.cta {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.cta h3 {
+  font-size: 22px;
+  color: #eae1ff;
+  margin-bottom: 18px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .features {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .header h2 {
+    font-size: 28px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .platforms {
+    gap: 25px;
+  }
+}

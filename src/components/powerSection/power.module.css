@@ -1,0 +1,38 @@
+.main_fluid {
+    /* border: 1px solid #fff; */
+    background-color: #0F0715;
+    padding: 50px 0px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.699)), url('../../assets/images/download8.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+}
+
+.main_power {
+    color: #fff;
+
+    padding: 50px 0px;
+
+}
+
+.power_contact {
+    /* border: 1px solid #fff; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.power_contact h1 {
+    padding: 20px 0px;
+}
