@@ -489,7 +489,7 @@
 
 
 import React, { useState } from "react";
-import styles from "./Navbar.module.css";
+import styles from "./navbar.module.css";
 import defaultLogo from "../../assets/images/logo.svg";
 import logo_1 from "../../assets/images/logo_1.svg";
 import logo_2 from "../../assets/images/automyta.png";
