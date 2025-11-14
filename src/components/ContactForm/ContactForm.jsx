@@ -410,12 +410,12 @@ const ContactForm = () => {
     return (
         <>
             <Navbar BG={true} />
-            <ContactBanner/>
+            <ContactBanner />
             <div className={styles.contactWrapper}>
                 <div className={`${styles.container} container`}>
-                    <h1 className={styles.heading}>Get in touch with Arkane</h1>
+                    <h1 className={styles.heading}>Get in touch with Automyta</h1>
                     <p className={styles.subheading}>
-                        All fields are required unless noted as optional
+                        Please fill out the form below — all fields are mandatory unless marked optional.
                     </p>
 
                     <form className={styles.form} onSubmit={handleSubmit}>

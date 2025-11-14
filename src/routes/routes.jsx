@@ -44,6 +44,7 @@ import Programmatic from "../pages/OurrServices/programmatic";
 import PPC from "../pages/OurrServices/ppc";
 import PaidSocial from "../pages/OurrServices/paidSocial";
 import DiscoverHow from "../pages/Discover-How";
+import DiscoverStrategy from "../pages/Discover-Strategy";
 
 export const publicRoutes = createBrowserRouter([
   {
@@ -63,6 +64,7 @@ export const publicRoutes = createBrowserRouter([
       { path: "/services/ppc", element: <PPC /> },
       { path: "/services/paid-social", element: <PaidSocial /> },
       { path: "/discover", element: <DiscoverHow /> },
+      { path: "/discover-strategy", element: <DiscoverStrategy /> },
     ],
   },
 ]);

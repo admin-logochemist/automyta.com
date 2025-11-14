@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './discover.module.css'
 import CustomButton from '../../common/CustomButton'
-import bgVideo from '../../assets/video/vdo.mp4' // 🎥 your background video
+import QuestionModal from '../QuestionModal';
+
 const DiscoverBanner = () => {
+    const [openModal, setOpenModal] = useState(false);
+
     return (
         <>
             <div className={`${styles.main_Section} container-fluid`}>
@@ -41,14 +44,20 @@ const DiscoverBanner = () => {
                             bgColor="linear-gradient(90deg, #6a7bff 0%, #a958ff 40%, #ff5f9e 80%)"
                             textColor="#fff"
                             padding="5px 20px"
+                            onClick={() => setOpenModal(true)}
+
                         />
                     </div>
 
                 </div>
             </div>
+            <QuestionModal open={openModal} onClose={() => setOpenModal(false)} />
+
         </>
 
     )
 }
 
 export default DiscoverBanner
+
+
