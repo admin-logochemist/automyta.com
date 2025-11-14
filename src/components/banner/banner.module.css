@@ -81,7 +81,7 @@
 @media (max-width: 1399.98px) { 
      .main_Section {
     padding: 80px 0px !important;
-    border: 1px solid #f51616;
+    /* border: 1px solid #f51616; */
   }
 
   .contain_sec {
