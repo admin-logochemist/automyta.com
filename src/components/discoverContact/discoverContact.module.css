@@ -1,0 +1,57 @@
+.contact_section {
+    background-color: #0F0715;
+    padding: 80px 20px;
+    color: #FAFAFA;
+    font-family: 'Poppins', sans-serif;
+}
+
+.inner_box {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.left h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+    opacity: .8;
+}
+
+.left h1 {
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.left p {
+    font-size: 18px;
+    line-height: 30px;
+    opacity: .85;
+}
+
+.right {
+    flex: 1;
+}
+
+.right img {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+/* RESPONSIVE */
+@media (max-width: 991px) {
+    .inner_box {
+        flex-direction: column;
+        text-align: center;
+    }
+}

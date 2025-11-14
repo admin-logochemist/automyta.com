@@ -57,8 +57,10 @@ import React from 'react'
 import styles from './join.module.css'
 import team from '../../assets/images/download6.jpg'
 import CustomButton from '../../common/CustomButton'
+import { useNavigate } from 'react-router'
 
 const JoinOurTeam = () => {
+    const navigate = useNavigate();
     return (
         <>
             <div className={`${styles.main_fluid} container-fluid`}>
@@ -96,9 +98,10 @@ const JoinOurTeam = () => {
                         <div className={styles.btn_custom}>
                             <CustomButton
                                 text="See current openings"
-                                     bgColor="linear-gradient(90deg, #6a7bff 0%, #a958ff 40%, #ff5f9e 80%)"
-                            textColor="#fff"
-                            padding="5px 20px"
+                                bgColor="linear-gradient(90deg, #6a7bff 0%, #a958ff 40%, #ff5f9e 80%)"
+                                textColor="#fff"
+                                padding="5px 20px"
+                                onClick={() => navigate("/careers")}
                             />
                         </div>
                     </div>

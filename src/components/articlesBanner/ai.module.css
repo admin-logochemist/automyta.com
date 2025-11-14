@@ -8,6 +8,8 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   overflow: hidden;
+  padding: 100px 0px !important;
+
 }
 
 /* 🔹 Video Background */
@@ -25,11 +27,14 @@
 }
 
 .contain_sec {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   position: relative;
   z-index: 2;
+  padding: 100px 0px !important;
+
+
 }
 
 
@@ -123,11 +128,12 @@
   .main_ai {
     padding: 0 20px;
   }
-.sec_content {
-  /* text-align: center;
+
+  .sec_content {
+    /* text-align: center;
   text-align-last: center; */
-  text-align: center;
-}
+    text-align: center;
+  }
 
   .motivation h1 {
     font-size: 46px;
@@ -145,6 +151,7 @@
 
 /* Mobile Portrait / Small Devices */
 @media (max-width: 480px) {
+
   /* .main_ai{
     padding: 0px 0px;
   } */
@@ -162,7 +169,8 @@
   .main_ai {
     padding: 0 0px;
   }
-  .contain_sec{
+
+  .contain_sec {
     height: 80vh;
 
   }

@@ -2,8 +2,10 @@ import React from 'react'
 import styles from './getting.module.css'
 import get from '../../assets/images/download1.jpg'
 import CustomButton from '../../common/CustomButton'
+import { useNavigate } from 'react-router'
 
 const GettingSection = () => {
+    const navigate = useNavigate();
     return (
         <>
             <div className={`${styles.main_sec} container-fluid`}>
@@ -27,6 +29,8 @@ const GettingSection = () => {
                                     bgColor="linear-gradient(90deg, #6a7bff 0%, #a958ff 40%, #ff5f9e 80%)"
                                     textColor="#fff"
                                     padding="5px 20px"
+                                    onClick={() => navigate("/discover")}
+
                                 />
                             </div>
                         </div>

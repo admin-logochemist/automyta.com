@@ -58,6 +58,8 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   overflow: hidden;
+    padding: 100px 0px !important;
+
 }
 
 /* 🔹 Video Background */
@@ -74,13 +76,13 @@
 }
 /* 🔹 Main Container */
 .contain_sec {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: flex-end; /* 👉 Move all content to the right */
   position: relative;
   z-index: 2;
-  padding: 0 8%; /* some spacing from right edge */
+  padding: 100px 8%; 
 }
 
 .main_ai {

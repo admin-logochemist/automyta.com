@@ -43,6 +43,7 @@ import SEO from "../pages/OurrServices/seo";
 import Programmatic from "../pages/OurrServices/programmatic";
 import PPC from "../pages/OurrServices/ppc";
 import PaidSocial from "../pages/OurrServices/paidSocial";
+import DiscoverHow from "../pages/Discover-How";
 
 export const publicRoutes = createBrowserRouter([
   {
@@ -50,17 +51,18 @@ export const publicRoutes = createBrowserRouter([
     children: [
       { path: "/", element: <Home /> },
       { path: "/our-services", element: <OurServices /> },
-      { path: "/contact", element: <ContactForm /> },
       { path: "/our-work", element: <OurWork /> },
       { path: "/about-us", element: <AboutUs /> },
-      { path: "/careers", element: <Careers /> },
       { path: "/articles", element: <Articles /> },
+      { path: "/careers", element: <Careers /> },
+      { path: "/contact", element: <ContactForm /> },
 
       { path: "/services/ai-digital-marketing", element: <AiDigital /> },
       { path: "/services/seo", element: <SEO /> },
       { path: "/services/programmatic-advertising", element: <Programmatic /> },
       { path: "/services/ppc", element: <PPC /> },
       { path: "/services/paid-social", element: <PaidSocial /> },
+      { path: "/discover", element: <DiscoverHow /> },
     ],
   },
 ]);

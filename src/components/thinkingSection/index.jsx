@@ -103,8 +103,12 @@ import React from 'react'
 import styles from './thinking.module.css'
 import { FaLightbulb, FaRobot, FaBrain, FaChartLine } from "react-icons/fa"
 import CustomButton from '../../common/CustomButton'
+import { useNavigate } from 'react-router'
 
 const ThinkingSection = () => {
+
+    const navigate = useNavigate();
+
 
     const digitalData = [
         {
@@ -175,6 +179,7 @@ const ThinkingSection = () => {
                         bgColor="linear-gradient(90deg, #6a7bff 0%, #a958ff 40%, #ff5f9e 80%)"
                         textColor="#fff"
                         padding="5px 20px"
+                        onClick={() => navigate("/our-services")}
                     />
                 </div>
             </div>

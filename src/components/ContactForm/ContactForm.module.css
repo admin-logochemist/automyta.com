@@ -288,7 +288,7 @@ textarea {
 .contactWrapper {
   background: radial-gradient(circle at top left, #1a0029, #0b0016 70%);
   color: #fff;
-  padding: 100px 20px;
+  padding: 100px 20px !important;
   display: flex;
   justify-content: center;
   align-items: center;
