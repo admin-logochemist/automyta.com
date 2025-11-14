@@ -112,7 +112,7 @@ const Footer = () => {
             </p>
             <div className={styles.location}>
               <FaMapMarkerAlt className={styles.icon} />
-              <span>Karachi, Pakistan</span>
+              <span>United States</span>
             </div>
           </div>
 
