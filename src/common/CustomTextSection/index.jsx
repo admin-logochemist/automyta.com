@@ -7,7 +7,8 @@ const CustomTextSection = ({
     sections = [],
     highlightBox = "",
     conclusion = "",
-    listItems = []
+    conclusionHeading = "",
+    listItems = [],
 }) => {
     return (
         <div className={`${styles.main_text_Sec} container-fluid`}>
@@ -37,7 +38,14 @@ const CustomTextSection = ({
                 )}
 
                 {conclusion && (
-                    <p className={styles.conclusion}>{conclusion}</p>
+                    <div className={styles.conclusionSection}>
+                        {conclusionHeading && (
+                            <h2 className={styles.conclusionHeading}>
+                                {conclusionHeading}
+                            </h2>
+                        )}
+                        <p className={styles.conclusion}>{conclusion}</p>
+                    </div>
                 )}
             </div>
 

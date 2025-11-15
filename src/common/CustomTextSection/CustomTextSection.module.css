@@ -4,12 +4,12 @@
 }
 
 .wrapper {
-    /* max-width: 850px; */
     margin: auto;
     padding: 60px 10px;
     font-family: 'Poppins', sans-serif;
     line-height: 1.8;
     color: #ffffff;
+    max-width: 1000px;
 }
 
 .title {
@@ -65,9 +65,147 @@
     font-size: 17px;
 }
 
+.conclusionSection {
+    margin-top: 50px;
+}
+
+.conclusionHeading {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
 .conclusion {
     font-size: 18px;
     margin-top: 40px;
     font-weight: 500;
     color: #ffffff;
+}
+
+/* ----------------- RESPONSIVE STYLES ----------------- */
+
+/* Small devices (mobile phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .wrapper {
+        padding: 40px 15px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .subheading {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .sectionHeading {
+        font-size: 20px;
+    }
+
+    .sectionText {
+        font-size: 15px;
+    }
+
+    .highlightBox {
+        font-size: 16px;
+        padding: 20px;
+        margin: 35px 0;
+    }
+
+    .list li {
+        font-size: 15px;
+    }
+
+    .conclusionHeading {
+        font-size: 20px;
+    }
+
+    .conclusion {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+}
+
+/* Medium devices (tablets, 576px to 991px) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .wrapper {
+        padding: 50px 20px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .subheading {
+        font-size: 17px;
+        margin-bottom: 35px;
+    }
+
+    .sectionHeading {
+        font-size: 22px;
+    }
+
+    .sectionText {
+        font-size: 16px;
+    }
+
+    .highlightBox {
+        font-size: 18px;
+        padding: 22px;
+        margin: 40px 0;
+    }
+
+    .list li {
+        font-size: 16px;
+    }
+
+    .conclusionHeading {
+        font-size: 22px;
+    }
+
+    .conclusion {
+        font-size: 17px;
+        margin-top: 35px;
+    }
+}
+
+/* Large devices (desktops, 992px and above) */
+@media (min-width: 992px) {
+    .wrapper {
+        padding: 60px 10px;
+    }
+
+    .title {
+        font-size: 38px;
+    }
+
+    .subheading {
+        font-size: 18px;
+    }
+
+    .sectionHeading {
+        font-size: 26px;
+    }
+
+    .sectionText {
+        font-size: 17px;
+    }
+
+    .highlightBox {
+        font-size: 20px;
+    }
+
+    .list li {
+        font-size: 17px;
+    }
+
+    .conclusionHeading {
+        font-size: 24px;
+    }
+
+    .conclusion {
+        font-size: 18px;
+    }
 }
