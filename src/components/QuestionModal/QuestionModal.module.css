@@ -1,4 +1,4 @@
-.overlay {
+/* .overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -62,6 +62,165 @@
   font-size: 20px;
   cursor: pointer;
 }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+} */
+
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  padding: 20px;
+}
+
+.modal {
+  position: relative;
+  width: 420px;
+  max-width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 14px;
+  animation: fadeIn 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.modal h2 {
+  margin-bottom: 10px;
+  font-size: 26px;
+  color: #333;
+}
+
+.modal p {
+  font-size: 15px;
+  margin-bottom: 12px;
+  color: #555;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form input,
+.form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  color: #333;
+}
+
+.submitBtn {
+  background: linear-gradient(90deg, #6a7bff 0%, #a958ff 40%, #ff5f9e 80%);
+  padding: 10px 0;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.closeBtn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+
+/* --------------------------------------------------- */
+/* 📱 Responsive Breakpoints */
+/* --------------------------------------------------- */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .modal {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .modal h2 {
+    font-size: 22px;
+  }
+
+  .modal p {
+    font-size: 14px;
+  }
+
+  .form input,
+  .form textarea {
+    font-size: 14px;
+  }
+
+  .submitBtn {
+    font-size: 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .modal {
+    width: 100%;
+    padding: 18px;
+  }
+
+  .modal h2 {
+    font-size: 20px;
+  }
+
+  .modal p {
+    font-size: 13px;
+  }
+
+  .form input,
+  .form textarea {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .submitBtn {
+    font-size: 15px;
+    padding: 9px 0;
+  }
+
+  .closeBtn {
+    font-size: 20px;
+    right: 8px;
+    top: 8px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+  .modal {
+    padding: 15px;
+  }
+
+  .modal h2 {
+    font-size: 18px;
+  }
+
+  .submitBtn {
+    font-size: 14px;
+  }
+}
+
 
 @keyframes fadeIn {
   from { opacity: 0; transform: scale(0.9); }
