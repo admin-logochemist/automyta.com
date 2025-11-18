@@ -319,7 +319,9 @@
   color: #a580ff;
   transform: translateX(4px);
 }
-
+.link{
+  text-decoration: none !important;
+}
 /* RIGHT SIDE */
 .right {
   width: 30%;

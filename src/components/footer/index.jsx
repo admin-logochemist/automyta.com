@@ -97,6 +97,7 @@ import styles from "./footer.module.css";
 import logo_2 from "../../assets/images/automyta.png";
 import { FaLinkedin, FaInstagram, FaDribbble, FaBehance, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import CustomButton from "../../common/CustomButton";
+import { Link } from "react-router";
 
 const Footer = () => {
   return (
@@ -121,24 +122,38 @@ const Footer = () => {
             <div className={styles.center}>
               <h4>Company</h4>
               <ul>
-                <li>About Automyta</li>
-                <li>Our Solutions</li>
-                <li>AI Tools</li>
-                <li>Case Studies</li>
-                <li>Careers</li>
-                <li>Contact Us</li>
+                <Link className={`${styles.link}`} to="/about-us"><li>About Automyta</li></Link>
+                <Link className={`${styles.link}`} to="/our-services"><li>Our Services</li></Link>
+                <Link className={`${styles.link}`} to="/our-work"><li>AI Work</li></Link>
+                <Link className={`${styles.link}`} to="/articles"><li>Articles</li></Link>
+                <Link className={`${styles.link}`} to="/careers"><li>Careers</li></Link>
+                <Link className={`${styles.link}`} to="/contact"><li>Contact Us</li></Link>
               </ul>
             </div>
 
             {/* Resources */}
             <div className={styles.resources}>
-              <h4>Resources</h4>
+              <h4>Services</h4>
               <ul>
-                <li>Automation Guides</li>
-                <li>API Documentation</li>
-                <li>Pricing</li>
-                <li>Support Center</li>
-                <li>Blog</li>
+                <Link className={`${styles.link}`} to="/services/ai-digital-marketing">
+                  <li>Ai-Powered Digital Marketing</li>
+                </Link>
+                <Link className={`${styles.link}`} to="/services/seo">
+                  <li>SEO Services</li>
+                </Link>
+                <Link className={`${styles.link}`} to="/services/programmatic-advertising">
+                  <li>Programmatic Advertising</li>
+                </Link>
+                <Link className={`${styles.link}`} to="/services/ppc">
+                  <li>PPC Services</li>
+                </Link>
+                <Link className={`${styles.link}`} to="/services/paid-social">
+                  <li>Paid Social Advertising</li>
+                </Link>
+
+
+
+
               </ul>
             </div>
           </div>
@@ -173,7 +188,7 @@ const Footer = () => {
               <FaDribbble />
               <FaBehance />
             </div>
-            <p className={styles.email}><FaEnvelope /> support@automyta.com</p>
+            <p className={styles.email}><FaEnvelope /> team@automyta.com</p>
           </div>
         </div>
 
