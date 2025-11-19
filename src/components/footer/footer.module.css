@@ -319,9 +319,11 @@
   color: #a580ff;
   transform: translateX(4px);
 }
-.link{
+
+.link {
   text-decoration: none !important;
 }
+
 /* RIGHT SIDE */
 .right {
   width: 30%;
@@ -395,11 +397,35 @@
 }
 
 .email {
-  color: #bcbac0;
-  font-size: 15px;
+  /* border: 1px solid #fff; */
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
+  color: #bcbac0;
+  /* default color for icon */
+  transition: 0.3s all ease-in;
+  padding: 10px 0px;
+
+}
+
+.email p,
+.email a {
+  color: #bcbac0;
+  font-size: 15px;
+  text-decoration: none;
+  transition: 0.3s all ease-in;
+  padding: 0px;
+}
+
+.email:hover {
+  color: #ffffff;
+  /* icon color */
+}
+
+.email:hover p,
+.email:hover a {
+  color: #ffffff;
+  /* text color */
 }
 
 /* BOTTOM */

@@ -117,8 +117,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className={`${styles.links_section}`}>
-            {/* Links */}
+          {/* <div className={`${styles.links_section}`}>
             <div className={styles.center}>
               <h4>Company</h4>
               <ul>
@@ -131,7 +130,6 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Resources */}
             <div className={styles.resources}>
               <h4>Services</h4>
               <ul>
@@ -150,13 +148,40 @@ const Footer = () => {
                 <Link className={`${styles.link}`} to="/services/paid-social">
                   <li>Paid Social Advertising</li>
                 </Link>
-
-
-
-
               </ul>
             </div>
+          </div> */}
+
+
+          <div className={`${styles.links_section}`}>
+
+            {/* Company */}
+            <div className={styles.center}>
+              <h4>Company</h4>
+              <ul>
+                <li>About Automyta</li>
+                <li>Our Services</li>
+                <li>AI Work</li>
+                <li>Articles</li>
+                <li>Careers</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+
+            {/* Services */}
+            <div className={styles.resources}>
+              <h4>Services</h4>
+              <ul>
+                <li>Ai-Powered Digital Marketing</li>
+                <li>SEO Services</li>
+                <li>Programmatic Advertising</li>
+                <li>PPC Services</li>
+                <li>Paid Social Advertising</li>
+              </ul>
+            </div>
+
           </div>
+
 
 
 
@@ -188,7 +213,14 @@ const Footer = () => {
               <FaDribbble />
               <FaBehance />
             </div>
-            <p className={styles.email}><FaEnvelope /> team@automyta.com</p>
+            {/* <p className={styles.email}><FaEnvelope /> team@automyta.com</p> */}
+            <div className={styles.email}>
+              <FaEnvelope />
+              <p>
+                <a href="mailto:team@automyta.com">team@automyta.com</a>
+              </p>
+            </div>
+
           </div>
         </div>
 
